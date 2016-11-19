@@ -2,6 +2,10 @@
 
 Sup is a simple messaging API.  Users can be fetched, created, and updated.  Messages can be sent between any two users of Sup. All endpoints require authentication via a Basic Authorization Header unless otherwise specified.
 
+## Configuration
+
+* `server/config/cors.js` - add your client app's production URL to the `whitelist` array to permit CORS from allowed origin(s).
+
 ## API Documentation
 
 ### Users endpoints
