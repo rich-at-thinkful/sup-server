@@ -10,7 +10,7 @@
     "node": ">=6.9.1"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node server/index.js",
     "test": "mocha --no-colors"
   },
   "keywords": [
