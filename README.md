@@ -61,7 +61,7 @@ None
 *Data parameters*:
 
 User object:
-- username (String, required)
+- username (String, required, unique)
 - password (ObjectID, required)
 
 *Query string parameters*:

@@ -59,7 +59,7 @@ messagesRouter
   .get((req, res) => {
     Message
       .findOne({ _id: req.params.messageId })
-      .populate('from to')
+      .populate('from to', 'username')
       .then(message => {
         if (!message) return res.status(404).json({ message: 'Message not found' });
         if ( message.from._id.equals(req.user._id) || message.to._id.equals(req.user._id) ) return res.json(message);
